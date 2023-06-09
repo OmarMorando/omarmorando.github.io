@@ -34,7 +34,7 @@ A cosa serve Il modulo &amp;ldquo;Modbus Payload Transfer&amp;rdquo; è uno scri
       <pubDate>Sun, 17 Apr 2022 15:09:35 +0200</pubDate>
       
       <guid>https://www.omarmorando.com/posts/2022/04/modulo-scadasploit-modbus-scan/</guid>
-      <description>Iniziamo a conoscere un po&#39; meglio ScadaSploit partendo da uno dei moduli ausiliari presenti: Modbus Scan.
+      <description>Iniziamo a conoscere un po&amp;rsquo; meglio ScadaSploit partendo da uno dei moduli ausiliari presenti: Modbus Scan.
 Posizioniamoci nella cartella dove abbiamo installato ScadaSploit e avviamolo tramite il comando $ ./scadasploit.py. Seguendo la stessa filosofia di approccio di Metasploit, possiamo cercare tutti i moduli che contengono una parola chiave usando il comando search &amp;lt;keyword&amp;gt; oppure visualizzare l&amp;rsquo;elenco completo dei moduli presenti con il comando show modules.
 Nel nostro caso useremo search modbus per individuare i moduli di ScadaSploit che possono aiutarci durante il nostro lavoro di pentesting su una rete Modbus TCP.</description>
     </item>
@@ -46,7 +46,7 @@ Nel nostro caso useremo search modbus per individuare i moduli di ScadaSploit ch
       
       <guid>https://www.omarmorando.com/posts/2022/04/scadasploit-framework/</guid>
       <description>Questa sezione è dedicata a SCADAsploit, un framework su cui sto lavorando dedicato al penetration testing in ambito OT/ICS. Vi chiederete: &amp;ldquo;Ma non c&amp;rsquo;è già Metasploit che lo fa?&amp;rdquo;. Certo! E allora che bisogno c&amp;rsquo;è di creare un nuovo tool del genere? Provo a dare qualche risposta:
- framework esclusivamente dedicato alle vulnerabilità di SCADA, PLC e altri dispositivi ICS scritto in Python, sia il core del framework sia i moduli aggiuntivi interfaccia &amp;ldquo;Metasploit like&amp;rdquo; basata su Sploitkit focus maggiore su parco PLC installato, specialmente europeo open source.</description>
+framework esclusivamente dedicato alle vulnerabilità di SCADA, PLC e altri dispositivi ICS scritto in Python, sia il core del framework sia i moduli aggiuntivi interfaccia &amp;ldquo;Metasploit like&amp;rdquo; basata su Sploitkit focus maggiore su parco PLC installato, specialmente europeo open source.</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ Come funziona Il famigerato malware Stuxnet, che gli Stati Uniti e Israele usava
       
       <guid>https://www.omarmorando.com/posts/2021/07/hacking-pentest-con-un-plc/</guid>
       <description>Penetration Test con un PLC La protezione di un ambiente ICS, inclusi i PLC, non è banale, poiché questi sistemi non sono progettati per essere resistenti ad attacchi cyber. Ciò significa che bisogna in qualche modo integrare le misure di resilienza della cybersicurezza all&amp;rsquo;interno e intorno all&amp;rsquo;ICS. Tali misure includono, ad esempio:
- la difesa perimetrale come i firewall per ridurre il rischio di traffico di rete indesiderato; il monitoraggio della rete e preferibilmente di tipo non intrusivo, specifico per ICS, basato su anomalie in modo da non creare alcun carico aggiuntivo sulle reti ICS; ultimo ma non meno importante, la protezione e il monitoraggio degli endpoint per ridurre l&amp;rsquo;esposizione dei PLC agli attacchi tramite connessioni remote.</description>
+la difesa perimetrale come i firewall per ridurre il rischio di traffico di rete indesiderato; il monitoraggio della rete e preferibilmente di tipo non intrusivo, specifico per ICS, basato su anomalie in modo da non creare alcun carico aggiuntivo sulle reti ICS; ultimo ma non meno importante, la protezione e il monitoraggio degli endpoint per ridurre l&amp;rsquo;esposizione dei PLC agli attacchi tramite connessioni remote.</description>
     </item>
     
     <item>

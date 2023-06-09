@@ -25,7 +25,7 @@ Come funziona Il famigerato malware Stuxnet, che gli Stati Uniti e Israele usava
       
       <guid>https://www.omarmorando.com/posts/2021/07/hacking-pentest-con-un-plc/</guid>
       <description>Penetration Test con un PLC La protezione di un ambiente ICS, inclusi i PLC, non è banale, poiché questi sistemi non sono progettati per essere resistenti ad attacchi cyber. Ciò significa che bisogna in qualche modo integrare le misure di resilienza della cybersicurezza all&amp;rsquo;interno e intorno all&amp;rsquo;ICS. Tali misure includono, ad esempio:
- la difesa perimetrale come i firewall per ridurre il rischio di traffico di rete indesiderato; il monitoraggio della rete e preferibilmente di tipo non intrusivo, specifico per ICS, basato su anomalie in modo da non creare alcun carico aggiuntivo sulle reti ICS; ultimo ma non meno importante, la protezione e il monitoraggio degli endpoint per ridurre l&amp;rsquo;esposizione dei PLC agli attacchi tramite connessioni remote.</description>
+la difesa perimetrale come i firewall per ridurre il rischio di traffico di rete indesiderato; il monitoraggio della rete e preferibilmente di tipo non intrusivo, specifico per ICS, basato su anomalie in modo da non creare alcun carico aggiuntivo sulle reti ICS; ultimo ma non meno importante, la protezione e il monitoraggio degli endpoint per ridurre l&amp;rsquo;esposizione dei PLC agli attacchi tramite connessioni remote.</description>
     </item>
     
     <item>

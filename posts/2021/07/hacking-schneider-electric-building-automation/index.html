@@ -63,7 +63,6 @@
 
 
 
-
     <meta property="article:published_time" content="2021-07-04 15:09:35 &#43;0200 CEST" />
 
 
@@ -187,9 +186,9 @@
 <p><img src="https://www.omarmorando.com/uploads/2021/root_7.png" alt=""></p>
 <p>Ed ecco che siamo riusciti a ottenere tutti gli account e i loro hash delle password! Se necessario, potremmo scoprirle attraverso un attacco brute-force come <strong>hashcat</strong> per recuperare le password in chiaro.</p>
 <p>È probabile che il file di configurazione per Automation Server sia nella directory <strong>/etc</strong>. Entriamo in questa cartella ed elenchiamo tutti i file e le directory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">root:&gt; cd /etc
-root:&gt; ls -l
-</code></pre></div><p><img src="https://www.omarmorando.com/uploads/2021/root_8.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root:&gt; cd /etc
+</span></span><span style="display:flex;"><span>root:&gt; ls -l
+</span></span></code></pre></div><p><img src="https://www.omarmorando.com/uploads/2021/root_8.png" alt=""></p>
 <p>Se scorriamo questo elenco troviamo un file chiamato &ldquo;whitelist.rules&rdquo;, che probabilmente contiene le regole per la connessione al server. Apriamolo.</p>
 <pre tabindex="0"><code>root:&gt; cat whitelist.rules
 </code></pre><p><img src="https://www.omarmorando.com/uploads/2021/root_9.png" alt=""></p>
@@ -312,7 +311,7 @@ root:&gt; ls -l
 
 
 
-<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.bb2c6bc3ed452ca4759660e4020811f248bc2320081559e8a32d8b0092773852941133639d35e8370d03d3ddaa750b1edd6b343c5bd22a55d5bdeae8f648f49b.js" integrity="sha512-uyxrw&#43;1FLKR1lmDkAggR8ki8IyAIFVnooy2LAJJ3OFKUETNjnTXoNw0D092qdQse3Ws0PFvSKlXVvero9kj0mw=="></script>
 
 
 
