@@ -41,12 +41,10 @@
 <meta itemprop="name" content="Hacking: simulazione Modbus TCP in Linux">
 <meta itemprop="description" content="I sistemi ICS utilizzano molti protocolli diversi per comunicare rispetto ai sistemi IT standard. Lo standard più utilizzato è il protocollo Modbus. Sviluppato per la prima volta da Modicon (ora Schneider Electric) nel 1979 come protocollo seriale, è stato modificato e aggiornato per funzionare su rete Ethernet TCP, assumendo il nome di Modbus TCP. Di seguito puoi vedere un diagramma che riassume la struttura del pacchetto RTU (seriale) e quella TCP."><meta itemprop="datePublished" content="2021-07-08T15:09:35+02:00" />
 <meta itemprop="dateModified" content="2021-07-08T15:09:35+02:00" />
-<meta itemprop="wordCount" content="1003"><meta itemprop="image" content="https://www.omarmorando.com"/>
+<meta itemprop="wordCount" content="1003"><meta itemprop="image" content="https://www.omarmorando.com" />
 <meta itemprop="keywords" content="hacking,ot,modbus," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.omarmorando.com"/>
-
-<meta name="twitter:title" content="Hacking: simulazione Modbus TCP in Linux"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.omarmorando.com" /><meta name="twitter:title" content="Hacking: simulazione Modbus TCP in Linux"/>
 <meta name="twitter:description" content="I sistemi ICS utilizzano molti protocolli diversi per comunicare rispetto ai sistemi IT standard. Lo standard più utilizzato è il protocollo Modbus. Sviluppato per la prima volta da Modicon (ora Schneider Electric) nel 1979 come protocollo seriale, è stato modificato e aggiornato per funzionare su rete Ethernet TCP, assumendo il nome di Modbus TCP. Di seguito puoi vedere un diagramma che riassume la struttura del pacchetto RTU (seriale) e quella TCP."/>
 
 
@@ -54,9 +52,11 @@
     <meta property="og:title" content="Hacking: simulazione Modbus TCP in Linux" />
 <meta property="og:description" content="I sistemi ICS utilizzano molti protocolli diversi per comunicare rispetto ai sistemi IT standard. Lo standard più utilizzato è il protocollo Modbus. Sviluppato per la prima volta da Modicon (ora Schneider Electric) nel 1979 come protocollo seriale, è stato modificato e aggiornato per funzionare su rete Ethernet TCP, assumendo il nome di Modbus TCP. Di seguito puoi vedere un diagramma che riassume la struttura del pacchetto RTU (seriale) e quella TCP." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.omarmorando.com/posts/2021/07/hacking-simulazione-modbus-tcp-in-linux/" /><meta property="og:image" content="https://www.omarmorando.com"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.omarmorando.com/posts/2021/07/hacking-simulazione-modbus-tcp-in-linux/" /><meta property="og:image" content="https://www.omarmorando.com" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-08T15:09:35+02:00" />
 <meta property="article:modified_time" content="2021-07-08T15:09:35+02:00" />
+
+
 
 
 
@@ -155,7 +155,7 @@
 <p><strong>QModMaster</strong> è un&rsquo;applicazione open source basata sul framework Qt che implementa le funzioni di un master Modbus. E&rsquo; dotata di una GUI che consente una facile configurazione delle modalità di comunicazione (RTU, TCP) e di un bus monitor per analizzare il traffico dei pacchetti di comunicazione. Nel caso si utilizzi Windows è disponibile la versione binaria pre-compilata. Nel nostro caso, faremo il download del codice sorgente e ne eseguiremo la compilazione su una macchina Linux.</p>
 <p><img src="https://www.omarmorando.com/uploads/2021/mod_sim_2.png" alt="QModMuster in esecuzione su Linux"></p>
 <p><strong>ModbusPal</strong> è un&rsquo;applicazione scritta in Java, quindi non necessita di alcuna compilazione in quanto indipendente dall&rsquo;host di esecuzione. Simula un dispositivo slave Modbus, con alcune funzioni avanzate come gli scripts Python.</p>
-<p><img src="https://www.omarmorando.com/uploads/2021/mod_sim_3.png" alt="ModbusPal con la tipica interfaccia &amp;ldquo;Java style&amp;rdquo;"></p>
+<p><img src="https://www.omarmorando.com/uploads/2021/mod_sim_3.png" alt="ModbusPal con la tipica interfaccia &ldquo;Java style&rdquo;"></p>
 <p>Come detto, dobbiamo compilare QModBus in modo che possa essere eseguito su sistemi Linux, nel mio caso Kubuntu 19.10. Scarichiamo il coside sorgente <a href="https://sourceforge.net/projects/qmodmaster/files/qModMaster-code-0.5.2-3.zip/download">qModMaster-code-0.5.2-3.zip</a> e salviamolo in una cartella di lavoro, nel mio caso <code>~/Develop/Projects/Modbus/qModMaster-code-0.5.2-3</code>.</p>
 <p>Se listiamo i files presenti nella cartella vediamo che è presente il file <code>qModMaster.pro</code>, tipico di un progetto sviluppato con Qt. Per la compilazione è necessario disporre di una versione minima Qt 5.2.1 o superiore, scaricabile da <a href="http://www.qt.io/download/">questo link</a>.</p>
 <p><img src="https://www.omarmorando.com/uploads/2021/mod_sim_4.png" alt=""></p>
@@ -289,7 +289,7 @@ Il protocollo Modbus TCP usa di default la porta 502 per la comunicazione TCP</p
     
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2023</span>
+            <span>&copy; 2024</span>
             <span><a href="https://www.omarmorando.com">Omar Morando</a></span>
             
             
@@ -313,7 +313,7 @@ Il protocollo Modbus TCP usa di default la porta 502 per la comunicazione TCP</p
 
 
 
-<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.bb2c6bc3ed452ca4759660e4020811f248bc2320081559e8a32d8b0092773852941133639d35e8370d03d3ddaa750b1edd6b343c5bd22a55d5bdeae8f648f49b.js" integrity="sha512-uyxrw&#43;1FLKR1lmDkAggR8ki8IyAIFVnooy2LAJJ3OFKUETNjnTXoNw0D092qdQse3Ws0PFvSKlXVvero9kj0mw=="></script>
+<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.ada905442d53eafc5c125b84cffce974e971bcb52433fb67db20c5af5b964cea37ebd2c16ee6457894372eac0911dd0428f88da966c8e885b160fc6c0fe0fed6.js" integrity="sha512-rakFRC1T6vxcEluEz/zpdOlxvLUkM/tn2yDFr1uWTOo369LBbuZFeJQ3LqwJEd0EKPiNqWbI6IWxYPxsD&#43;D&#43;1g=="></script>
 
 
 

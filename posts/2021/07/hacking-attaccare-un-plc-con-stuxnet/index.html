@@ -43,12 +43,10 @@ Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente
 <meta itemprop="description" content="Per illustrare come sia possibile attaccare un PLC e quali potrebbero essere le conseguenze di ciò diamo un&rsquo;occhiata al worm Stuxnet.;
 Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente ai sistemi di controllo di supervisione e acquisizione dati (SCADA) di Siemens. Il worm è stato progettato per attaccare specifici PLC Siemens e ha sfruttato quattro vulnerabilità 0-day. La versione finale di Stuxnet è stata scoperta per la prima volta in Bielorussia nel giugno 2010 da Sergey Ulasen di Kaspersky Labs."><meta itemprop="datePublished" content="2021-07-09T15:09:35+02:00" />
 <meta itemprop="dateModified" content="2021-07-09T15:09:35+02:00" />
-<meta itemprop="wordCount" content="2224"><meta itemprop="image" content="https://www.omarmorando.com"/>
+<meta itemprop="wordCount" content="2224"><meta itemprop="image" content="https://www.omarmorando.com" />
 <meta itemprop="keywords" content="hacking,ot," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.omarmorando.com"/>
-
-<meta name="twitter:title" content="Hacking: attaccare un PLC con Stuxnet"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.omarmorando.com" /><meta name="twitter:title" content="Hacking: attaccare un PLC con Stuxnet"/>
 <meta name="twitter:description" content="Per illustrare come sia possibile attaccare un PLC e quali potrebbero essere le conseguenze di ciò diamo un&rsquo;occhiata al worm Stuxnet.;
 Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente ai sistemi di controllo di supervisione e acquisizione dati (SCADA) di Siemens. Il worm è stato progettato per attaccare specifici PLC Siemens e ha sfruttato quattro vulnerabilità 0-day. La versione finale di Stuxnet è stata scoperta per la prima volta in Bielorussia nel giugno 2010 da Sergey Ulasen di Kaspersky Labs."/>
 
@@ -58,9 +56,11 @@ Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente
 <meta property="og:description" content="Per illustrare come sia possibile attaccare un PLC e quali potrebbero essere le conseguenze di ciò diamo un&rsquo;occhiata al worm Stuxnet.;
 Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente ai sistemi di controllo di supervisione e acquisizione dati (SCADA) di Siemens. Il worm è stato progettato per attaccare specifici PLC Siemens e ha sfruttato quattro vulnerabilità 0-day. La versione finale di Stuxnet è stata scoperta per la prima volta in Bielorussia nel giugno 2010 da Sergey Ulasen di Kaspersky Labs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.omarmorando.com/posts/2021/07/hacking-attaccare-un-plc-con-stuxnet/" /><meta property="og:image" content="https://www.omarmorando.com"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.omarmorando.com/posts/2021/07/hacking-attaccare-un-plc-con-stuxnet/" /><meta property="og:image" content="https://www.omarmorando.com" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-09T15:09:35+02:00" />
 <meta property="article:modified_time" content="2021-07-09T15:09:35+02:00" />
+
+
 
 
 
@@ -163,7 +163,7 @@ Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente
 <p>{% hint style=&ldquo;info&rdquo; %}
 Il software STEP 7 utilizza una libreria chiamata <strong>s7otbxdx.dll</strong> per eseguire la comunicazione con il PLC. Ad esempio, se un blocco di codice deve essere letto dal PLC viene chiamata la routine &ldquo;s7blk_read&rdquo;. Stuxnet usa una tecnica di DLL hijacking per intercettare tutti i comandi provenienti da STEP 7 e WinCC (il sistema SCADA di Siemens) e, a sua volta, li inoltra alla libreria originale dopo averne modificato il contenuto. In questo modo invia comandi imprevisti al PLC restituendo agli utenti un loop di valori di funzionamento normale.
 {% endhint %}</p>
-<p><img src="https://www.omarmorando.com/uploads/2021/stuxnet_4.png" alt="L&amp;rsquo;attacco di tipo DLL hijacking sulle librerie STEP 7"></p>
+<p><img src="https://www.omarmorando.com/uploads/2021/stuxnet_4.png" alt="L&rsquo;attacco di tipo DLL hijacking sulle librerie STEP 7"></p>
 <p>Gli attacchi al PLC sono stati eseguiti ogni 27 giorni circa per rendere l&rsquo;attacco furtivo e difficile da rilevare, che rappresenta una parte centrale di un APT. Stuxnet ha inoltre rilevato il computer di controllo e visualizzato un output falso sul software STEP 7. Questo passaggio dell&rsquo;attacco era una parte fondamentale nota come &ldquo;inganno&rdquo;. Gli ingegneri situati nella centrale nucleare non hanno ricevuto alcuna indicazione di errori, supponendo che le centrifughe stessero ruotando alla frequenza corretta. Ricevendo un output falso in STEP 7, essi presumevano che il tracollo fosse stato causato da un errore umano anzichè da un malware. Stuxnet ha anche nascosto il codice direttamente sul PLC dopo l&rsquo;infezione ed è stato quindi definito anche un rootkit del PLC.</p>
 <p><img src="https://www.omarmorando.com/uploads/2021/stuxnet_5.png" alt="Un esempio di sistema SCADA basato su Siemens WinCC"></p>
 <p>Per la sua diffusione in rete Stuxnet ha sfruttato una delle vulnerabilità 0-day dei sistemi operativi Windows. Esso infatti si è diffuso attraverso il protocollo di condivisione dei file Server Message Block (SMB) come documentato nel rapporto sulla vulnerabilità <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250">CVE-2008-4250</a> nel National Vulnerability Database. La vulnerabilità ha consentito l&rsquo;esecuzione di codice in modalità remota, diffondendosi in modo aggressivo sulla rete locale. Il worm aveva diverse altre funzionalità, come l&rsquo;auto-replica, si aggiornava usando un centro di comando e controllo, conteneva un rootkit di Windows che nascondeva i suoi file binari e tentava di aggirare i sistemi di sicurezza presenti sui computer (anti-virus e anti-malware).</p>
@@ -281,7 +281,7 @@ Il software STEP 7 utilizza una libreria chiamata <strong>s7otbxdx.dll</strong> 
     
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2023</span>
+            <span>&copy; 2024</span>
             <span><a href="https://www.omarmorando.com">Omar Morando</a></span>
             
             
@@ -305,7 +305,7 @@ Il software STEP 7 utilizza una libreria chiamata <strong>s7otbxdx.dll</strong> 
 
 
 
-<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.bb2c6bc3ed452ca4759660e4020811f248bc2320081559e8a32d8b0092773852941133639d35e8370d03d3ddaa750b1edd6b343c5bd22a55d5bdeae8f648f49b.js" integrity="sha512-uyxrw&#43;1FLKR1lmDkAggR8ki8IyAIFVnooy2LAJJ3OFKUETNjnTXoNw0D092qdQse3Ws0PFvSKlXVvero9kj0mw=="></script>
+<script type="text/javascript" src="https://www.omarmorando.com/bundle.min.ada905442d53eafc5c125b84cffce974e971bcb52433fb67db20c5af5b964cea37ebd2c16ee6457894372eac0911dd0428f88da966c8e885b160fc6c0fe0fed6.js" integrity="sha512-rakFRC1T6vxcEluEz/zpdOlxvLUkM/tn2yDFr1uWTOo369LBbuZFeJQ3LqwJEd0EKPiNqWbI6IWxYPxsD&#43;D&#43;1g=="></script>
 
 
 
