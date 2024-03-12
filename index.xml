@@ -9,27 +9,6 @@
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 22 Apr 2022 15:09:35 +0200</lastBuildDate><atom:link href="https://www.omarmorando.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://www.omarmorando.com/posts/2014/09/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.omarmorando.com/posts/2014/09/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://www.omarmorando.com/posts/2014/03/migrate-to-hugo-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.omarmorando.com/posts/2014/03/migrate-to-hugo-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://www.omarmorando.com/about_complete/</link>
       <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
@@ -110,6 +89,25 @@ Come funziona Il famigerato malware Stuxnet, che gli Stati Uniti e Israele usava
       <guid>https://www.omarmorando.com/posts/2021/07/hacking-pentest-con-un-plc/</guid>
       <description>Penetration Test con un PLC La protezione di un ambiente ICS, inclusi i PLC, non è banale, poiché questi sistemi non sono progettati per essere resistenti ad attacchi cyber. Ciò significa che bisogna in qualche modo integrare le misure di resilienza della cybersicurezza all&amp;rsquo;interno e intorno all&amp;rsquo;ICS. Tali misure includono, ad esempio:
  la difesa perimetrale come i firewall per ridurre il rischio di traffico di rete indesiderato; il monitoraggio della rete e preferibilmente di tipo non intrusivo, specifico per ICS, basato su anomalie in modo da non creare alcun carico aggiuntivo sulle reti ICS; ultimo ma non meno importante, la protezione e il monitoraggio degli endpoint per ridurre l&amp;rsquo;esposizione dei PLC agli attacchi tramite connessioni remote.</description>
+    </item>
+    
+    <item>
+      <title>Hacking: attaccare un PLC con Stuxnet</title>
+      <link>https://www.omarmorando.com/posts/2021/07/hacking-attaccare-un-plc-con-stuxnet/</link>
+      <pubDate>Fri, 09 Jul 2021 15:09:35 +0200</pubDate>
+      
+      <guid>https://www.omarmorando.com/posts/2021/07/hacking-attaccare-un-plc-con-stuxnet/</guid>
+      <description>Per illustrare come sia possibile attaccare un PLC e quali potrebbero essere le conseguenze di ciò diamo un&amp;rsquo;occhiata al worm Stuxnet.;
+Introduzione a Stuxnet Stuxnet è un worm indipendente, destinato esclusivamente ai sistemi di controllo di supervisione e acquisizione dati (SCADA) di Siemens. Il worm è stato progettato per attaccare specifici PLC Siemens e ha sfruttato quattro vulnerabilità 0-day. La versione finale di Stuxnet è stata scoperta per la prima volta in Bielorussia nel giugno 2010 da Sergey Ulasen di Kaspersky Labs.</description>
+    </item>
+    
+    <item>
+      <title>Hacking: simulazione Modbus TCP in Linux</title>
+      <link>https://www.omarmorando.com/posts/2021/07/hacking-simulazione-modbus-tcp-in-linux/</link>
+      <pubDate>Thu, 08 Jul 2021 15:09:35 +0200</pubDate>
+      
+      <guid>https://www.omarmorando.com/posts/2021/07/hacking-simulazione-modbus-tcp-in-linux/</guid>
+      <description>I sistemi ICS utilizzano molti protocolli diversi per comunicare rispetto ai sistemi IT standard. Lo standard più utilizzato è il protocollo Modbus. Sviluppato per la prima volta da Modicon (ora Schneider Electric) nel 1979 come protocollo seriale, è stato modificato e aggiornato per funzionare su rete Ethernet TCP, assumendo il nome di Modbus TCP. Di seguito puoi vedere un diagramma che riassume la struttura del pacchetto RTU (seriale) e quella TCP.</description>
     </item>
     
   </channel>
